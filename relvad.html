@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relvad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="relvad-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="üleskerimis-funktsioon-script.js"></script>
+    <script src="üleskerimis-nupp-script.js"></script>
+    <script src="relv-script.js"></script>
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-valorant-3251602-2724649.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-sisu">
+            <h1>Valorant simplified</h1>
+            <div class="nupud">
+                <a class="nupp" href="index.html">Avaleht</a>
+                <a class="nupp" href="agendid.html">Agendid</a>
+                <a class="nupp" href="relvad.html">Relvad</a>
+            </div>
+            <div class="allalaadimise-nupu-ümbris">
+                <a href="https://playvalorant.com/" target="_blank" class="allalaadimise-nupp">ALLALAADIMINE</a>
+            </div>
+        </div>
+    </header>
+    <h2>Relvad</h2>
+    <p class="põhi-kirjeldus">Videomängus Valorant on palju erinevaid relvasid, millest kõik võivad erinevates olukordades kasulikud olla. Relvad jaotuvad kaheks: Primary ja Secondary. Sa saad kokku omada korraga kuni kolme relva, millest üks on alati nuga, teine Secondary kategooriast ja kolmas Primary kategooriast. Secondary kategooria relvad on Classic, Shorty, Frenzy, Ghost ja Sheriff. Ülejäänud relvad kuuluvad Primary kategooriasse. </p>
+    <p class="põhi-kirjeldus">Esimine round on ainult Secondary relvadega, ehk püstolitega, seetõttu nimetatakse seda ka püstol raundiks. Peale seda saavad kõik poest, vastavalt oma finantsilisele seisukorrale, enda äranägemise järgi iga round relvi osta. Raha teenitakse iga raundi lõpus, võidu korral saadakse rohkem raha. Enamasti ostatakse ainult primary relv ja püstolitele erilist tähelepanu ei pöörata, kuid mõnes olukorras nagu näiteks sniper'i omamisel võib olla secondary elupäästva toimega. Relvadega on soovituslik tulistamise ajal paigal seista ning üritada sihtida vastase pead.</p>
+    <p class="põhi-kirjeldus">Kui sinu tiimil on vähe raha, siis on soovitatav osta odavamaid relvi, et kaotuse puhul ei oleks sa rahast täiesti lage. Sellist tehnikat nimetatakse eco raundiks. Surres kaotavad mängijad kõik oma relvad ning peavad neid järgmisel raundil uuesti ostma.</p>
+    <div class="container">
+        <div>
+            <a class="relv-nupp" onclick="showWeaponDescription('Classic'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/5/57/Classic.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Classic</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Frenzy'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/f/f1/Frenzy.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Frenzy</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Sheriff'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/3/3e/Sheriff.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Sheriff</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Spectre'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/9/90/Spectre.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Spectre</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Judge'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/8/8a/Judge.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Judge</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Guardian'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/f/fd/Guardian.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Guardian</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Vandal'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/5/56/Vandal.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Vandal</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Operator'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/1/17/Operator.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Operator</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Odin'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/5/58/Odin.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Odin</span>
+            </a>
+        </div>
+        <div>
+            <a class="relv-nupp" onclick="showWeaponDescription('Shorty'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/7/77/Shorty.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Shorty</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Ghost'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/a/ab/Ghost.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Ghost</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Stinger'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/b/b6/Stinger.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Stinger</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Bucky'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/e/eb/Bucky.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Bucky</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Bulldog'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/0/07/Bulldog.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Bulldog</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Phantom'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/e/ec/Phantom.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Phantom</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Marshal'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/b/b9/Marshal.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Marshal</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Ares'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/0/05/Ares.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Ares</span>
+            </a>
+            <a class="relv-nupp" onclick="showWeaponDescription('Tactical Knife'); scrollAlmostTop()">
+                <img src="https://static.wikia.nocookie.net/valorant/images/8/8f/Melee.png" alt="Icon" class="relv-nupp-ikoon">
+                <span class="relv-nupp-tekst">Tactical knife</span>
+            </a>
+        </div>
+        <div class="relv-kirjeldus" id="relvKirjeldus">
+            <p class="relv-kirjeldus"></p>
+        </div>
+    </div>
+    <div class="kerimis-nupu-ümbris">
+        <a class="kerimis-nupp" onclick="scrollToTop()">↑</a>
+    </div>
+    <footer>
+        <p class="footer-tekst">&copy; 2023 Valorant Simplified</p>
+        <a href="https://www.youtube.com/@valorant" target="_blank" class="sotsiaalmeedia"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://twitter.com/VALORANTukn" target="_blank" class="sotsiaalmeedia"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/valorant/" target="_blank" class="sotsiaalmeedia"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/VALORANT" target="_blank" class="sotsiaalmeedia"><i class="fa fa-facebook-square"></i></a>
+    </footer>
+</body>
+</html>
