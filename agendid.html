@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="agendid-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="üleskerimis-funktsioon-script.js"></script>
+    <script src="üleskerimis-nupp-script.js"></script>
+    <script src="agent-script.js"></script>
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-valorant-3251602-2724649.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        
+        <div class="header-sisu">
+            <h1>Valorant simplified</h1>
+            <div class="nupud">
+                <a class="nupp" href="index.html">Avaleht</a>
+                <a class="nupp" href="agendid.html">Agendid</a>
+                <a class="nupp" href="relvad.html">Relvad</a>
+            </div>
+            
+            <div class="allalaadimise-nupu-ümbris">
+                <a href="https://playvalorant.com/" target="_blank" class="allalaadimise-nupp">ALLALAADIMINE</a>
+            </div>
+        </div>
+    </header>
+    
+    <h2>Agendid</h2>
+    <p class="põhi-kirjeldus">Valorantis on palju erinevaid tegelasi ehk agente, keda sul on võimalik mängida. Hetkel on Valorantis 23 agenti, kuid neid lisatakse pidevalt juurde. Igal agendil on kolm võimet ja üks x-võime, mis aeglaselt täitub. X-võime täitub kiiremini vastaseid tappes või kaardi peal spetsiaalseid palle üles korjates. Võimeid saab poest raundi alguses paarisaja raha eest osta. Erinevalt relvadest ei kaota mängijad surres oma võimeid. Soovituslik on endale võimalusel igal raundil kõik võimed osta.</p>
+    <div class="container">
+        <div>
+            <div class="agent-nupp-ümbris">
+                <a class="agent-nupp" onclick="showAgentDescription('Astra'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/0/08/Astra_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Astra</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Breach'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/5/53/Breach_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Breach</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Brimstone'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/4/4d/Brimstone_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Brimstone</span>
+                </a>
+            </div>
+            <div class="agent-nupp-ümbris">
+                <a class="agent-nupp" onclick="showAgentDescription('Chamber'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/0/09/Chamber_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Chamber</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Cypher'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/8/88/Cypher_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Cypher</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Deadlock'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/e/eb/Deadlock_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Deadlock</span>
+                </a>
+            </div>
+            <div class="agent-nupp-ümbris">
+                <a class="agent-nupp" onclick="showAgentDescription('Fade'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/a/a6/Fade_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Fade</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Gekko'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/6/66/Gekko_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Gekko</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Harbor'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/f/f3/Harbor_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Harbor</span>
+                </a>
+            </div>
+            <div class="agent-nupp-ümbris">
+                <a class="agent-nupp" onclick="showAgentDescription('ISO'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/b/b7/Iso_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">ISO</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Jett'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/3/35/Jett_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Jett</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('KAY/O'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/f/f0/KAYO_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">KAY/O</span>
+                </a>
+            </div>
+            <div class="agent-nupp-ümbris">
+                <a class="agent-nupp" onclick="showAgentDescription('Killjoy'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/1/15/Killjoy_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Killjoy</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Neon'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/d/d0/Neon_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Neon</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Omen'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/b/b0/Omen_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Omen</span>
+                </a>
+            </div>
+            <div class="agent-nupp-ümbris">
+                <a class="agent-nupp" onclick="showAgentDescription('Phoenix'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/1/14/Phoenix_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Phoenix</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Raze'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/9/9c/Raze_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Raze</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Reyna'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/b/b0/Reyna_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Reyna</span>
+                </a>
+            </div>
+            <div class="agent-nupp-ümbris">
+                <a class="agent-nupp" onclick="showAgentDescription('Sage'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/7/74/Sage_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Sage</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Skye'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/3/33/Skye_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Skye</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Sova'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/4/49/Sova_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Sova</span>
+                </a>
+            </div>
+            <div class="agent-nupp-ümbris">
+                <a class="agent-nupp" onclick="showAgentDescription('Viper'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/5/5f/Viper_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Viper</span>
+                </a>
+                <a class="agent-nupp" onclick="showAgentDescription('Yoru'); scrollAlmostTop()">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/d/d4/Yoru_icon.png" alt="Icon" class="agent-nupp-ikoon">
+                    <span class="agent-nupp-tekst">Yoru</span>
+                </a>
+            </div>
+        </div>
+        <div class="agent-kirjeldus" id="agentKirjeldus">
+            <p class="agent-kirjeldus"></p>
+        </div>
+    </div>
+    
+    
+
+    
+    <div class="kerimis-nupu-ümbris">
+        <a class="kerimis-nupp" onclick="scrollToTop()">↑</a>
+    </div>
+    <footer>
+        <p class="footer-tekst">&copy; 2023 Valorant Simplified</p>
+        <a href="https://www.youtube.com/@valorant" target="_blank" class="sotsiaalmeedia"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://twitter.com/VALORANTukn" target="_blank" class="sotsiaalmeedia"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/valorant/" target="_blank" class="sotsiaalmeedia"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/VALORANT" target="_blank" class="sotsiaalmeedia"><i class="fa fa-facebook-square"></i></a>
+    </footer>
+</body>
+</html>
