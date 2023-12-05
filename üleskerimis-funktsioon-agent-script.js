@@ -1,4 +1,4 @@
-function scrollAlmostTop() {
+function scrollAlmostTop() { // Funktsioon kirjelduse kaugusele kerimiseks. Koodi kirjutas ChatGPT (https://chat.openai.com/).
   const targetElement = document.getElementById('agentKirjeldus'); // Replace 'yourTargetElementId' with your actual element ID
   const offsetPercentage = 10; // Adjust this percentage to scroll higher or lower above the element
   
